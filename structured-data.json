@@ -1,0 +1,159 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://github.com/haddindeve#person",
+      "name": "Muhammad Tanveer",
+      "jobTitle": "Full-Stack AI Automation Engineer",
+      "email": "mailto:mtanveertahir66@gmail.com",
+      "url": "https://github.com/haddindeve",
+      "sameAs": [
+        "https://www.linkedin.com/in/muhammad-tanveer-advenno/",
+        "https://github.com/haddindeve"
+      ],
+      "description": "Full-stack AI automation engineer. I build agentic systems, browser and workflow automation, RAG pipelines and the production web platforms they run on - from Rust and Python services to Next.js dashboards and PHP/MySQL business systems.",
+      "knowsAbout": [
+        "3D food model menu",
+        "AI assistant routing",
+        "AI content generation",
+        "AI operating system",
+        "AI posture analysis",
+        "AI research agent",
+        "AI sales agent",
+        "AI video generation",
+        "AI-native ERP",
+        "AR restaurant menu",
+        "ATM electronic journal parser",
+        "B2B export catalogue",
+        "B2B lead generation AI",
+        "EJ log parsing",
+        "GL reconciliation",
+        "Google Maps ranking automation",
+        "IoT analytics dashboard",
+        "LinkedIn lead generation",
+        "NFC access control",
+        "POSIX threads C",
+        "Playwright browser automation",
+        "Rust accounting engine",
+        "SEO content automation",
+        "WhatsApp AI agent",
+        "agency management platform",
+        "algorithmic trading Python",
+        "augmented reality menu",
+        "automated lead generation",
+        "automated trading dashboard",
+        "automated video pipeline",
+        "biometric identity verification",
+        "client portal",
+        "concurrent programming",
+        "constraint satisfaction problem",
+        "corrective exercise platform",
+        "crypto trading bot",
+        "cycle tracking app",
+        "document OCR software",
+        "e-passport chip reading",
+        "eMRTD verification",
+        "employee portal",
+        "exporter buyer discovery",
+        "fabric shop software",
+        "face anti-spoofing",
+        "fitness CRM",
+        "gym management software",
+        "industrial IoT monitoring",
+        "inventory management POS",
+        "lead enrichment pipeline",
+        "liveness detection",
+        "local SEO automation",
+        "multi-branch accounting software",
+        "musculoskeletal assessment software",
+        "natural language search leads",
+        "offline-first PWA",
+        "order management system",
+        "orthopaedic casting stockinette",
+        "presentation attack detection",
+        "privacy-first mobile app",
+        "product catalogue CMS",
+        "prospect research automation",
+        "restaurant POS system",
+        "retail POS system",
+        "retail automation",
+        "scanned document processing",
+        "shortest path algorithm",
+        "smart manufacturing platform",
+        "social media automation",
+        "stockinette supplier",
+        "surgical instruments manufacturer website",
+        "table extraction AI",
+        "thread synchronisation",
+        "topical authority",
+        "tubular stockinette manufacturer",
+        "women's health app"
+      ]
+    },
+    {
+      "@type": "SoftwareSourceCode",
+      "name": "Advenno - Agency Platform with Client and Employee Portals",
+      "description": "Marketing site, JSON API and admin, client and employee portals for a software agency, on PHP 8 and MySQL.",
+      "codeRepository": "https://github.com/haddindeve/advenno-agency-saas-platform",
+      "author": {
+        "@id": "https://github.com/haddindeve#person"
+      },
+      "creator": {
+        "@id": "https://github.com/haddindeve#person"
+      },
+      "programmingLanguage": [
+        "PHP 8.3",
+        "MySQL via PDO",
+        "JWT for API, sessions for portals",
+        "Vanilla JavaScript and CSS, no framework",
+        "Cron workers, page cache"
+      ],
+      "keywords": [
+        "agency management platform",
+        "client portal",
+        "employee portal",
+        "PHP 8 SaaS",
+        "JWT API",
+        "invoice management system"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Why no JavaScript framework?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The site is content-heavy and SEO-critical. Server-rendered PHP with vanilla JS gives fast first paint and removes an entire build and hydration layer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How are the three portals separated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Each has its own session scope and route namespace; the shared API enforces role checks independently of the UI."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What secures the API?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "JWT bearer tokens, distinct from the session cookies used by the portals."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I review the code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is private - client data is involved. Access can be discussed."
+          }
+        }
+      ]
+    }
+  ]
+}

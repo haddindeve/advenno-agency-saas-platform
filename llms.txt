@@ -1,0 +1,42 @@
+# Advenno - Agency Platform with Client and Employee Portals
+
+> Marketing site, JSON API and admin, client and employee portals for a software agency, on PHP 8 and MySQL.
+
+Author: Muhammad Tanveer (Full-Stack AI Automation Engineer)
+Contact: mtanveertahir66@gmail.com | https://www.linkedin.com/in/muhammad-tanveer-advenno/
+Repository: https://github.com/haddindeve/advenno-agency-saas-platform
+Source availability: implementation held in a private repository; access on request.
+
+## Summary
+A software agency ran its public site, client communication, employee management and invoicing as separate tools. Clients had no single place to see project status or invoices, and staff records lived outside any system tied to the work being delivered.
+
+One PHP 8 codebase serving a server-rendered marketing site alongside a JSON API backend with three role-scoped portals. Sessions secure the portals, JWT secures the API, and a PDO layer fails soft so a database issue degrades a page rather than the whole site. No build step, which keeps deployment on shared hosting reliable.
+
+## Stack
+Backend: PHP 8.3, Database: MySQL via PDO, Auth: JWT for API, sessions for portals, Frontend: Vanilla JavaScript and CSS, no framework, Ops: Cron workers, page cache
+
+## Capabilities
+- Role-scoped admin, client and employee portals
+- JWT-secured JSON API
+- Invoice generation and download
+- Email queue drained by cron
+- Page caching for the marketing site
+- Google Search Console integration utilities
+
+## Outcomes
+- Public site, client delivery and internal administration unified in one deployable codebase
+- No build toolchain, so deployment stays viable on standard PHP hosting
+- Database failures degrade gracefully instead of taking pages down
+
+## FAQ
+Q: Why no JavaScript framework?
+A: The site is content-heavy and SEO-critical. Server-rendered PHP with vanilla JS gives fast first paint and removes an entire build and hydration layer.
+
+Q: How are the three portals separated?
+A: Each has its own session scope and route namespace; the shared API enforces role checks independently of the UI.
+
+Q: What secures the API?
+A: JWT bearer tokens, distinct from the session cookies used by the portals.
+
+Q: Can I review the code?
+A: It is private - client data is involved. Access can be discussed.
